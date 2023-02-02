@@ -1,91 +1,62 @@
 /* Стилизация кнопки */
-.buttons {
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-}
-
-.buttons__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 46px;
-    color: var(--black);
-}
-
-.buttons__row {
-    display: flex;
-    gap: 33px;
-    margin-bottom: 30px;
-    align-items: center;
-}
-
-.buttons__description {
-    display: block;
-    width: 65px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
-}
-
 .button {
-    width: 189px;
-    height: 48px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 15px 57px 14px;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
 
 .button_primary {
-    background-color: #4263EB;
-    color: var(--white);
+  background-color: #4263eb;
+  color: var(--white);
 }
 
 .button_secondary {
-    background-color: var(--purple);
-    color: var(--white);
+  background-color: var(--purple);
+  color: var(--white);
 }
 
 .button_alternate {
-    border: 1px solid var(--grey-3);
-    color: var(--grey-4);
+  border: 1px solid var(--grey-3);
+  color: var(--grey-4);
 }
 
-.button_primary:hover, .button_primary.hover {
-    background: #2342C0;
+.button_primary:hover {
+  background: #2342c0;
 }
 
-.button_secondary:hover, .button_secondary.hover {
-    background: #5028C6;
+.button_secondary:hover {
+  background: #5028c6;
 }
 
-.button_alternate:hover, .button_alternate.hover {
-    border: 1px solid var(--black);
+.button_alternate:hover {
+  border: 1px solid var(--black);
 }
 
-.button_primary:disabled, .button_primary.disabled {
-    background: #4263EB;
-    opacity: 0.5;
-    cursor: not-allowed;
+.button_primary:disabled {
+  background: #4263eb;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.button_secondary:disabled, .button_secondary.disabled {
-    background: var(--purple);
-    opacity: 0.5;
-    cursor: not-allowed;
+.button_secondary:disabled {
+  background: var(--purple);
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.button_alternate:disabled, .button_alternate.disabled {
-    border: 1px solid var(--grey-3);
-    opacity: 0.5;
-    cursor: not-allowed;
+.button_alternate:disabled {
+  border: 1px solid var(--grey-3);
+  opacity: 0.5;
+  cursor: not-allowed;
 }
