@@ -45,8 +45,8 @@
 }
 
 .accordion__summary::-webkit-details-marker {
-        display: none;
-    }
+    display: none;
+}
 
 .accordion__content {
     font-family: 'Inter';
