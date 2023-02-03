@@ -43,20 +43,9 @@
   border: 1px solid var(--black);
 }
 
-.button_primary:disabled {
-  background: #4263eb;
+.button:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
-.button_secondary:disabled {
-  background: var(--purple);
-  opacity: 0.5;
-  cursor: not-allowed;
-}
 
-.button_alternate:disabled {
-  border: 1px solid var(--grey-3);
-  opacity: 0.5;
-  cursor: not-allowed;
-}
