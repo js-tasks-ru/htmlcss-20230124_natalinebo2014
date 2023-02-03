@@ -1,6 +1,5 @@
 /* Стилизация аккордеона */
 .accordion__details {
-    width: 730px;
     background: #FFFFFF;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
@@ -25,6 +24,10 @@
     top: 32px;
     right: 32px;
     transition: 0.3s transform ease-in;
+}
+
+.accordion__details[open] {
+    padding-bottom: 32px;
 }
 
 .accordion__details[open]::after {
