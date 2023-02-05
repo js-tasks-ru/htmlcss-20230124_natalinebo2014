@@ -4,7 +4,8 @@
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
-@import '../../03-lection1/01-button/button.css';
+
+@import '../../03-lection1/02-accordion/accordion.css';
 
 :root {
     --white: #ffffff;
@@ -28,6 +29,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
