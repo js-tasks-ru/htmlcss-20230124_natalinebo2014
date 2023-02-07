@@ -1,0 +1,49 @@
+.skeleton {
+  width: 100%;
+  padding: 24px 40px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid #acb5bd;
+  border-radius: 8px;
+}
+
+.skeleton__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.skeleton__item {
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+  height: 20px;
+}
+
+.skeleton__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.skeleton__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton__info-header {
+  width: 50%;
+}
+
+.skeleton__info-header .skeleton__item:first-child {
+  width: 60%;
+}
+
+
