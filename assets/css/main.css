@@ -18,6 +18,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
@@ -36,4 +37,21 @@ html {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 
+}
+
+.cards {
+    background: var(--grey-5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.cards__item {
+    width: 350px;
+    height: 367px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
 }
