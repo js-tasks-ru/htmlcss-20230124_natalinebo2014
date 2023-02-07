@@ -26,7 +26,7 @@
   height: 20px;
 }
 
-.skeleton__circle {
+.skeleton__item_circle {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -38,12 +38,10 @@
   gap: 8px;
 }
 
-.skeleton__info-header {
+.skeleton__info_header {
   width: 50%;
 }
 
-.skeleton__info-header .skeleton__item:first-child {
+.skeleton__item_short {
   width: 60%;
 }
-
-
