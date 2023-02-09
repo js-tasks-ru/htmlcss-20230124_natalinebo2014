@@ -1,5 +1,4 @@
 .skeleton {
-  width: 100%;
   padding: 24px 40px 32px 24px;
   display: flex;
   flex-direction: column;
@@ -30,18 +29,21 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  flex-shrink: 0
 }
 
 .skeleton__info {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-.skeleton__info_header {
-  width: 50%;
+  flex-shrink: 1;
+  flex-basis: 100%;
 }
 
 .skeleton__item_short {
-  width: 60%;
+  max-width: 172px;
+}
+
+.skeleton__item_medium {
+  max-width: 257px;
 }
