@@ -38,7 +38,6 @@
 .histogram__items {
     height: 50px;
     display: flex;
-    justify-content: space-between;
     gap: 1px;
     align-items: flex-end;
 }
