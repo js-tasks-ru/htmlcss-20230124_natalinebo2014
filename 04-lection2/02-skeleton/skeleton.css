@@ -41,9 +41,9 @@
 }
 
 .skeleton__item_short {
-  max-width: 172px;
+  max-width: 40%;
 }
 
 .skeleton__item_medium {
-  max-width: 257px;
+  max-width: 60%;
 }
