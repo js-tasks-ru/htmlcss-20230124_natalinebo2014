@@ -1,6 +1,7 @@
 .preview {
-    height: 400px;
-    background-color: #F9FAFC;
-    border-top: 1px solid #DDE2E5;
-    border-bottom: 1px solid #DDE2E5;
+    padding-top: 68px;
+    padding-bottom: 204px;
+    background-color: var(--grey-5);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
 }
