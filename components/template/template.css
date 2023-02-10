@@ -46,6 +46,10 @@
     text-decoration: none;
 }
 
+.menu__link.active {
+    color: var(--red-alert);
+}
+
 .menu__item:not(:last-child) {
     margin-bottom: 4px;
 }
@@ -60,6 +64,7 @@
     height: 130px;
     display: flex;
     align-items: center;
+    background-color: var(--grey-5);
 }
 
 .page__footer_text {
