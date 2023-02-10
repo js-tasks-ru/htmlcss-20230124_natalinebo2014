@@ -37,6 +37,9 @@
   flex-direction: column;
   gap: 8px;
   flex-shrink: 1;
+}
+
+.skeleton__info_header {
   flex-basis: 100%;
 }
 
