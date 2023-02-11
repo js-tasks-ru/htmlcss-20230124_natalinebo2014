@@ -1,0 +1,24 @@
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;;
+}
+
+.page__container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 56px;
+    height: 100%;
+}
+
+.footer__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/menu/menu.css">
+    <link rel="stylesheet" href="../components/component-preview/component-preview.css">
+    <link rel="stylesheet" href="template.css">
+    <title>Page Component</title>
+    <style>
+        .header {
+            padding: 40px 0px;
+        }
+        .main {
+            padding: 36px 0;
+            background-color: var(--grey-5);
+            align-self: stretch;
+        }
+        .footer {
+            padding: 70px 0;
+            display: flex;
+            align-items: center;
+            background-color: var(--grey-5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container"></div>
+        </header>
+        <main class="main">
+            <div class="container page__container">
+                <div class="menu">
+                    <h2 class="menu__title">Components</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="" class="menu__link">Modal</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Tooltip</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Avatar</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Calendar</a></li>
+                        <li class="menu__item"><a href="" class="menu__link menu__link_active">Histogram</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Custom form elements</a></li>
+                    </ul>
+                    <a href="" class="menu__link">Main page</a>
+                </div>
+                <div class="component"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">Reusable component library</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
