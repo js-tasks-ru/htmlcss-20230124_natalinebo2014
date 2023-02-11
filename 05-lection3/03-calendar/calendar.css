@@ -18,7 +18,6 @@
     margin-bottom: 16px;
     display: grid;
     grid-template-columns: repeat(7, minmax(auto, 1fr));;
-    column-gap: 8px;
 }
 
 .calendar__day {
@@ -36,8 +35,6 @@
 }
 
 .calendar__date {
-    min-width: 36px;
-    height: 36px;
     justify-self: stretch;
     text-align: center;
     padding: 8px 0;
