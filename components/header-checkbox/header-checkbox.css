@@ -1,0 +1,88 @@
+.header__themes {
+    width: 125px;
+    position: relative;
+    margin-right: 32px;
+}
+
+.header__themes::before,
+.header__themes::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+.header__themes::before {
+    left: 0;
+    background-image: url("../../assets/images/sun-icon.svg");
+}
+
+.header__themes::after {
+    right: 0;
+    background-image: url("../../assets/images/moon-icon.svg");
+    opacity: 0.5;
+}
+
+.header__themes_checkbox {
+    display: none;
+}
+
+.header__themes_label {
+    display: block;
+    width: 52px;
+    height: 28px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    position: relative;
+    cursor: pointer;
+}
+
+.header__themes_label::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: var(--grey-3);
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.2s ease-in;
+}
+
+.header__themes_checkbox:checked + .header__themes_label {
+    background-color: var(--grey-3);
+}
+
+.header__themes_checkbox:checked + .header__themes_label::after {
+    background-color: var(--white);
+}
+
+.header__themes_checkbox:checked + .header__themes_label::after {
+    transform: translateX(24px);
+}
+
+@media (max-width: 768px) {
+    .header__themes {
+        width: 100%;
+        padding: 24px 0;
+        margin-right: 0;
+        border-top: 1px solid var(--grey-2);
+        border-bottom: 1px solid var(--grey-2);
+    }
+
+    .header__themes_label {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .header__themes::before,
+    .header__themes::after {
+        display: none;
+    }
+
+}

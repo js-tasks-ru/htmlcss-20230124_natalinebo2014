@@ -46,3 +46,12 @@
     background-color: var(--blue-light);
     flex-grow: 1;
 }
+
+.histogram__small {
+  gap: 10px;
+}
+
+.histogram__title_small,
+.histogram__link_small {
+  font-size: 13px;
+}

@@ -1,0 +1,15 @@
+.button {
+    display: block;
+    padding: 15px 52px 14px;
+    font-family: 'Roboto';
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: var(--grey-4);
+    background-color: transparent;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}

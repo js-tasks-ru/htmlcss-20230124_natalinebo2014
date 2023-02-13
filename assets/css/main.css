@@ -5,6 +5,9 @@
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
 @import '../../components/cards/cards.css';
+@import '../../components/button/button.css';
+@import '../../components/header-checkbox/header-checkbox.css';
+@import '../../components/histogram/histogram.css';
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -34,6 +37,12 @@
     padding: 0;
     box-sizing: border-box;
     color: inherit;
+    border: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 html {
@@ -42,5 +51,7 @@ html {
     color: var(--black);
     font-size: 16px;
 }
+
+
 
 
