@@ -17,7 +17,7 @@
 .calendar__header {
     margin-bottom: 16px;
     display: grid;
-    grid-template-columns: repeat(7, minmax(auto, 1fr));;
+    grid-template-columns: repeat(7, minmax(auto, 1fr));
 }
 
 .calendar__day {
