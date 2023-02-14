@@ -1,4 +1,5 @@
 @import '../fonts/fonts.css';
+@import '../../components/button/button.css';
 @import '../../components/header/header.css';
 @import '../../components/page/page.css';
 @import '../../components/preview/preview.css';
@@ -37,6 +38,7 @@
     padding: 0;
     box-sizing: border-box;
     color: inherit;
+    border: none;
 }
 
 html {
@@ -44,6 +46,10 @@ html {
     font-weight: 400;
     color: var(--black);
     font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
 }
 
 
