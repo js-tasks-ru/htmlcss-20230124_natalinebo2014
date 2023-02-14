@@ -22,3 +22,10 @@
     color: var(--grey-3);
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .page__container {
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+}

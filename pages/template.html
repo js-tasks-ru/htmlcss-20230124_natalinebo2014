@@ -5,51 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../components/menu/menu.css">
-    <link rel="stylesheet" href="../components/component-preview/component-preview.css">
     <link rel="stylesheet" href="template.css">
     <title>Page Component</title>
     <style>
-        .header {
-            padding: 40px 0px;
-        }
         .main {
-            padding: 36px 0;
-            background-color: var(--grey-5);
+                        background-color: var(--grey-5);
             align-self: stretch;
-        }
-        .footer {
-            padding: 70px 0;
-            display: flex;
-            align-items: center;
-            background-color: var(--grey-5);
         }
 
     </style>
 </head>
 <body>
     <div class="page">
-        <header class="header">
-            <div class="container"></div>
+        <header class="header header__component">
+            <div class="container">
+                 <a href="#" class="header__logo"></a>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                        <a href="" class="header__link header__link_active">Components</a>
+                        </li>
+                        <li class="header__menu-item">
+                        <a href="" class="header__link">About</a>
+                        </li>
+                        <li class="header__menu-item">
+                        <a href="" class="header__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="header__themes">
+                        <input
+                        type="checkbox"
+                        name="themes-checkbox"
+                        id="themes-checkbox"
+                        class="header__themes_checkbox"
+                        />
+                        <label for="themes-checkbox" class="header__themes_label"> </label>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main class="main">
             <div class="container page__container">
-                <div class="menu">
-                    <h2 class="menu__title">Components</h2>
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="" class="menu__link">Modal</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Tooltip</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Avatar</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Calendar</a></li>
-                        <li class="menu__item"><a href="" class="menu__link menu__link_active">Histogram</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Custom form elements</a></li>
+                <div class="aside">
+                    <ul>
+                        <li class="aside__block">
+                            <h2 class="aside__title">Components</h2>
+                            <ul class="aside__list">
+                                <li class="aside__item"><a href="" class="aside__link">Modal</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Tooltip</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Avatar</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Calendar</a></li>
+                                <li class="aside__item"><a href="" class="aside__link aside__link_active">Histogram</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Custom form elements</a></li>
+                            </ul>
+                        </li>
+                        <li class="aside__block">
+                            <h2 class="aside__title">Containers</h2>
+                            <ul class="aside__list">
+                                <li class="aside__item"><a href="" class="aside__link">Modal</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Tooltip</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Avatar</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Calendar</a></li>
+                                <li class="aside__item"><a href="" class="aside__link aside__link_active">Histogram</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Custom form elements</a></li>
+                            </ul>
+                        </li>
+                        <li class="aside__block">
+                            <h2 class="aside__title">Templates</h2>
+                            <ul class="aside__list">
+                                <li class="aside__item"><a href="" class="aside__link">Modal</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Tooltip</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Avatar</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Calendar</a></li>
+                                <li class="aside__item"><a href="" class="aside__link aside__link_active">Histogram</a></li>
+                                <li class="aside__item"><a href="" class="aside__link">Custom form elements</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <a href="" class="menu__link">Main page</a>
+
+                    <a href="" class="aside__link">Main page</a>
                 </div>
-                <div class="component"></div>
+                <div class="component">
+                    <h2 class="component__title">Histogram</h2>
+                    <div class="component__content">
+                        <div class="histogram">
+                            <div class="histogram__info">
+                                <div class="histogram__total">
+                                    <h3 class="histogram__title">Total orders</h3>
+                                    <p class="histogram__sum">50254</p>
+                                </div>
+                                <div>
+                                    <a href="#"  class="histogram__link">View all</a>
+                                </div>
+                            </div>
+                            <div class="histogram__items">
+                                <div class="histogram__item" style="height: 100%;"></div>
+                                <div class="histogram__item" style="height: 80%;"></div>
+                                <div class="histogram__item" style="height: 60%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 40%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 30%;"></div>
+                                <div class="histogram__item" style="height: 80%;"></div>
+                                <div class="histogram__item" style="height: 50%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 100%;"></div>
+                                <div class="histogram__item" style="height: 50%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 50%;"></div>
+                                <div class="histogram__item" style="height: 100%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 100%;"></div>
+                                <div class="histogram__item" style="height: 40%;"></div>
+                                <div class="histogram__item" style="height: 60%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 40%;"></div>
+                                <div class="histogram__item" style="height: 30%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 60%;"></div>
+                                <div class="histogram__item" style="height: 100%;"></div>
+                                <div class="histogram__item" style="height: 40%;"></div>
+                                <div class="histogram__item" style="height: 30%;"></div>
+                                <div class="histogram__item" style="height: 20%;"></div>
+                                <div class="histogram__item" style="height: 60%;"></div>
+                                <div class="histogram__item" style="height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer footer__component">
             <div class="container">
                 <p class="footer__text">Reusable component library</p>
             </div>

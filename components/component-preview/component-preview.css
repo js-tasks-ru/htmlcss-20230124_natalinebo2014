@@ -2,4 +2,26 @@
     background-color: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    padding: 30px 48px;
+}
+
+.component__title {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .component__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .component {
+        padding: 30px 0;
+        width: 100%;
+    }
 }

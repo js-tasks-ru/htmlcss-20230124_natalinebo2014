@@ -1,0 +1,40 @@
+.aside {
+  padding-right: 80px;
+}
+
+.aside__title {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.aside__list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.aside__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.aside__link_active {
+  color: var(--red-alert);
+}
+
+.aside__item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+}

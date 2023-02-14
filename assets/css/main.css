@@ -4,6 +4,10 @@
 @import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
+@import '../../components/aside/aside.css';
+@import '../../components/header-checkbox/header-checkbox.css';
+@import '../../components/component-preview/component-preview.css';
+@import '../../components/histogram/histogram.css';
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -13,6 +17,7 @@
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
+    --blue-light: #4263EB;
     --red: #F03D3E;
     --red-alert: #D84910;
     --grey-1: #F8F9FA;
@@ -32,12 +37,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
 
+ul {
+    list-style: none;
 }
 
 
