@@ -36,19 +36,20 @@
 }
 
 .histogram__items {
-    height: 50px;
-    display: flex;
-    gap: 1px;
-    align-items: flex-end;
+  height: 50px;
+  display: flex;
+  gap: 1px;
+  align-items: flex-end;
 }
 
 .histogram__item {
-    background-color: var(--blue-light);
-    flex-grow: 1;
+  background-color: var(--blue-light);
+  flex-grow: 1;
 }
 
-.histogram__small {
+.histogram_small {
   gap: 10px;
+  margin-top: 28px;
 }
 
 .histogram__title_small,

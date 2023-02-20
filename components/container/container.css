@@ -4,6 +4,10 @@
     padding: 0 5px;
 }
 
+.container_header {
+    padding-left: 15px;
+}
+
 @media (max-width: 1180px) {
     .container {
         padding: 0 16px;
