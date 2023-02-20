@@ -1,4 +1,5 @@
 @import '../fonts/fonts.css';
+@import '../../components/button/button.css';
 @import '../../components/header/header.css';
 @import '../../components/page/page.css';
 @import '../../components/preview/preview.css';
@@ -20,13 +21,16 @@
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
+    --blue-text: #334D6E;
     --blue-light: #4263EB;
+    --blue-grey: #A0B1F5;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5: #F9FAFC;
+    --grey-6: #90A0B7;
 
     --error: var(--red);
     --success: var(--blue);
@@ -54,6 +58,10 @@ html {
     color: var(--black);
     font-size: 16px;
     scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
 }
 
 
