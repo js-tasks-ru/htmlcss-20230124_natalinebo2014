@@ -12,6 +12,9 @@
 @import '../../components/avatar/avatar.css';
 @import '../../components/tooltip/tooltip.css';
 @import '../../components/calendar/calendar.css';
+@import '../../components/checkbox/checkbox.css';
+@import '../../components/radio/radio.css';
+@import '../../components/tabs/tabs.css';
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -63,6 +66,8 @@ html {
 body {
     min-height: 100vh;
 }
+
+
 
 
 

@@ -50,7 +50,20 @@
     </header>
     <main class="preview">
       <div class="container">
-        <div class="cards">
+        <div class="tabs">
+          <input type="radio" id="#all-tab" class="tabs__input" name="radio-tabs" checked>
+          <input type="radio" id="#atoms-tab" class="tabs__input" name="radio-tabs">
+          <input type="radio" id="#simple-tab" class="tabs__input" name="radio-tabs">
+
+          <div class="tabs__scroller">
+              <label for="#all-tab" class="tabs__label">All components</label>
+              <label for="#complex-tab" class="tabs__label">Complex</label>
+              <label for="#simple-tab" class="tabs__label">Simple</label>
+          </div>
+
+          <div class="tabs__content tabs__content_all">
+              <!-- All components -->
+              <div class="cards">
           <div class="cards__item">
             <div class="cards__item_header">
               <h3 class="cards__item_title">Tooltip</h3>
@@ -63,7 +76,7 @@
                             <use href="assets/images/sprite.svg#question"></use>
                         </svg>
                     </div>
-                    <div class="tooltip__details">Helper text</div>
+                    <div class="tooltip__details" style="display: block;">Helper text</div>
                 </div>
             </div>
           </div>
@@ -72,7 +85,81 @@
               <h3 class="cards__item_title">Custom form elements</h3>
               <p class="cards__item_subtitle">Element</p>
             </div>
-            <div class="cards__item_body"></div>
+            <div class="cards__item_body cards__item_form">
+              <div class="column">
+                <div  class="column__item">
+                <label class="checkbox">
+                    <input type="checkbox" name="" class="checkbox__input" value="1">
+                    <div class="checkbox__state">
+                        <div class="checkbox__control">
+                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="checkbox__title">Default</div>
+                    </div>
+                </label>
+                </div>
+                <div  class="column__item">
+                    <label class="checkbox">
+                        <input type="checkbox" name="" class="checkbox__input" checked value="2">
+                        <div class="checkbox__state">
+                            <div class="checkbox__control">
+                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="checkbox__title">Checked</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="column__item" >
+                    <label class="checkbox">
+                        <input type="checkbox" name="" class="checkbox__input" value="3" disabled>
+                        <div class="checkbox__state">
+                            <div class="checkbox__control">
+                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="checkbox__title checkbox__title_disabled">Disabled</div>
+                        </div>
+                    </label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column__item">
+                <label class="radio">
+                    <input type="radio" name="radio" value="1" class="radio__input">
+                    <div class="radio__state">
+                        <div class="radio__control">
+                        </div>
+                        <div class="radio__title">Default</div>
+                    </div>
+                </label>
+                </div>
+                <div class="column__item">
+                    <label class="radio">
+                        <input type="radio" name="radio" class="radio__input" value="2" checked>
+                        <div class="radio__state">
+                            <div class="radio__control">
+                            </div>
+                            <div class="radio__title">Selected</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="column__item">
+                    <label class="radio">
+                        <input type="radio" name="radio" class="radio__input" value="3" disabled>
+                        <div class="radio__state">
+                            <div class="radio__control">
+                            </div>
+                            <div class="radio__title">Disabled</div>
+                        </div>
+                    </label>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="cards__item">
             <div class="cards__item_header">
@@ -214,6 +301,18 @@
           </div>
         </div>
         <button class="button">Load more</button>
+          </div>
+
+
+          <div class="tabs__content tabs__content_complex">
+              <!-- Сложные компоненты -->
+          </div>
+          <div class="tabs__content tabs__content_simple">
+              <!-- Простые компоненты -->
+          </div>
+      </div>
+
+
       </div>
     </main>
     <footer class="footer" id="about">
