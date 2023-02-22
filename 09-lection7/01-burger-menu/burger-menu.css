@@ -1,0 +1,72 @@
+.burger__checkbox {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.burger__button {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.burger__button::before,
+.burger__button::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background-color: var(--black);
+    position: absolute;
+    top: 10px;
+    left: -2px;
+    transform: scale(0);
+    transition: transform .3s ease-in;
+    transition-delay: .3s;
+}
+
+.burger__button::before {
+    transform: rotate(45deg) scale(0);
+}
+
+.burger__button::after {
+    transform: rotate(-45deg) scale(0);
+}
+
+.burger__line {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--black);
+    transition: transform .3s ease-in;
+    transition-delay: .3s;
+}
+
+.burger__line:nth-child(2) {
+    top: 50%;
+}
+
+.burger__line:nth-child(3) {
+    top: 100%;
+}
+
+.burger__checkbox:checked + .burger__button {
+    transform: rotate(-90deg);
+}
+
+.burger__checkbox:checked + .burger__button .burger__line {
+    transform: translateY(50%) scale(0);
+}
+
+.burger__checkbox:checked + .burger__button::before {
+    transform: rotate(45deg) scale(1);
+}
+.burger__checkbox:checked + .burger__button::after {
+    transform: rotate(-45deg) scale(1);
+}
+
