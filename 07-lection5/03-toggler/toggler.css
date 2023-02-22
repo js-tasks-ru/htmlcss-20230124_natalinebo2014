@@ -37,12 +37,25 @@
     transition: all 0.2s;
 }
 
-.toggler__title {
+.toggler__control::after {
+  content: "Off";
+  position: absolute;
+  top: 0;
+  right: -35px;
   font-family: Inter;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--grey-4);
+}
+
+.toggler__input:checked + .toggler__state .toggler__control::after {
+  content: "On";
+}
+
+.toggler__input:disabled + .toggler__state .toggler__control::after {
+  content: "Disabled";
+  right: -80px;
 }
 
 .toggler__input:checked + .toggler__state .toggler__control {
@@ -69,8 +82,7 @@
 
 .toggler__input:disabled + .toggler__state .toggler__control {
   background-color: var(--grey-2);
-}
-
-.toggler__input:disabled + .toggler__state .toggler__control {
   cursor: not-allowed;
 }
+
+
