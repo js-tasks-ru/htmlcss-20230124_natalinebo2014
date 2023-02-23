@@ -6,6 +6,7 @@
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
 @import '../../components/cards/cards.css';
+@import '../../components/toggler/toggler.css';
 
 @import '../../03-lection1/02-accordion/accordion.css';
 
@@ -39,6 +40,8 @@
     box-sizing: border-box;
     color: inherit;
     border: none;
+    text-decoration: none;
+    list-style: none;
 }
 
 html {

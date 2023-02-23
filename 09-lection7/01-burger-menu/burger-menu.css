@@ -1,72 +1,104 @@
-.burger__checkbox {
+/* .burger {
     position: absolute;
-    outline: none;
-    clip: rect(0, 0, 0, 0);
+    top: 16px;
+    left: 12px;
+    display: none;
+} */
+
+.burger__checkbox {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
 }
 
 .burger__button {
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all .3s ease-in;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--grey-2);
+  position: absolute;
+    top: 16px;
+    left: 12px;
+    z-index: 20;
+    display: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
 .burger__button::before,
 .burger__button::after {
-    content: "";
-    width: 35px;
-    height: 2px;
-    background-color: var(--black);
-    position: absolute;
-    top: 10px;
-    left: -2px;
-    transform: scale(0);
-    transition: transform .3s ease-in;
-    transition-delay: .3s;
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: var(--black);
+  position: absolute;
+  top: 15px;
+  left: 4px;
+  transform: scale(0);
+  transition: transform 0.3s ease-in;
+  transition-delay: 0.3s;
 }
 
 .burger__button::before {
-    transform: rotate(45deg) scale(0);
+  transform: rotate(45deg) scale(0);
 }
 
 .burger__button::after {
-    transform: rotate(-45deg) scale(0);
+  transform: rotate(-45deg) scale(0);
 }
 
 .burger__line {
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: var(--black);
-    transition: transform .3s ease-in;
-    transition-delay: .3s;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  left: 5px;
+  background-color: var(--black);
+  transition: transform 0.3s ease-in;
+  transition-delay: 0.3s;
+}
+
+.burger__line:first-child {
+    top: 7px;
 }
 
 .burger__line:nth-child(2) {
-    top: 50%;
+  top: 48%;
 }
 
-.burger__line:nth-child(3) {
-    top: 100%;
+.burger__line:last-child {
+  bottom: 7px;
 }
 
 .burger__checkbox:checked + .burger__button {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .burger__checkbox:checked + .burger__button .burger__line {
-    transform: translateY(50%) scale(0);
+  transform: translateY(50%) scale(0);
 }
 
 .burger__checkbox:checked + .burger__button::before {
-    transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
 }
 .burger__checkbox:checked + .burger__button::after {
-    transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
 }
 
+.burger__checkbox:checked  ~ .header__nav {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.burger__checkbox:checked  ~ .header__nav .header__themes .header__icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .burger__button {
+    display: block;
+  }
+}

@@ -2,19 +2,28 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-        <title>Burger menu</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="../../assets/css/main.css">
+      <link rel="stylesheet" href="./burger-menu.css">
+      <script defer src="./burger-menu.js"></script>
+      <title>Burger menu</title>
     </head>
     <body>
          <header class="header">
       <div class="container container_header">
         <a href="#" class="header__logo">
           <svg class="header__logo_svg">
-            <use href="../../assets/images/sprite.svg"></use>
+            <use href="../../assets/images/sprite.svg#logo"></use>
           </svg>
         </a>
+        <!-- <div class="burger"> -->
+                <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
+                <label for="burger-checkbox" class="burger__button">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </label>
+            <!-- </div> -->
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="header__menu-item">
@@ -27,20 +36,55 @@
               <a href="#" class="header__link">Contact</a>
             </li>
           </ul>
+          <div class="header__themes">
+            <div class="toggler__mode">Dark mode</div>
+            <svg class="header__icon header__icon_1 header__icon_active">
+              <use href="../../assets/images/sprite.svg#sun"></use>
+            </svg>
+            <input
+              type="checkbox"
+              name="themes-checkbox"
+              id="themes-checkbox"
+              class="header__themes_checkbox"
+            />
+            <label for="themes-checkbox" class="header__themes_label"> </label>
+            <svg class="header__icon header__icon_2">
+              <use href="../../assets/images/sprite.svg#moon"></use>
+            </svg>
+          </div>
         </nav>
         <h1 class="header__title">Reusable component library</h1>
       </div>
     </header>
-        <div class="container">
-            <div class="burger">
-                <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
-                <label for="burger-checkbox" class="burger__button">
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                </label>
+     <main class="preview">
+            <div class="container"></div>
+            <div class="container">
+                <div class="cards">
+                    <div class="cards__item">
+                    </div>
+                    <div class="cards__item">
+                    </div>
+                    <div class="cards__item">
+                    </div>
+                    <div class="cards__item">
+                    </div>
+                    <div class="cards__item">
+                    </div>
+                    <div class="cards__item">
+                    </div>
+                </div>
             </div>
-        </div>
-
-    </body>
+        </main>
+        <footer class="footer">
+            <div class="container">
+              <h2 class="footer__title">About</h2>
+              <div class="footer__text">
+                This project is a collection of professionally designed, pre-built,
+                fully responsive HTML snippets you can drop into your projects. Get
+                started by checking out our free preview components, or browsing the
+                PNG previews in the categories you're most curious about.
+              </div>
+            </div>
+        </footer>
+  </body>
 </html>
