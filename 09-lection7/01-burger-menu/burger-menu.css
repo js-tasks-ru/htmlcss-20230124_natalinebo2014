@@ -99,7 +99,7 @@
     height: 100vh;
 }
 
-.burger__checkbox:checked  ~ .header__nav .header__themes .header__icon {
+.burger__checkbox:checked  ~ .header__nav .toggler .toggler__icon {
     display: none;
 }
 

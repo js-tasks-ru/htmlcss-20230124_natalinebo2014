@@ -1,5 +1,4 @@
 const menu = document.getElementById('burger-menu');
-//const menuClose = document.getElementById('burger-menu-close');
 const menuOpen = document.getElementById('burger-menu-open');
 const headerLinks = document.querySelectorAll('.header__link');
 const burgerCheckbox = document.getElementById('burger-checkbox');
@@ -30,11 +29,3 @@ if (menuOpen) {
 
 
 
-/* if (menuClose) {
-    menuClose.addEventListener('click', function() {
-        if (menu) {
-            menu.removeAttribute('data-open');
-        }
-    });
-}
- */

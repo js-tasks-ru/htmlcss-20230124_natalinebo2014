@@ -16,14 +16,12 @@
             <use href="../../assets/images/sprite.svg#logo"></use>
           </svg>
         </a>
-        <!-- <div class="burger"> -->
-                <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
-                <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                </label>
-            <!-- </div> -->
+        <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
+        <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </label>
         <nav class="header__nav" id="burger-menu">
           <ul class="header__menu">
             <li class="header__menu-item">
@@ -36,22 +34,27 @@
               <a href="#" class="header__link">Contact</a>
             </li>
           </ul>
-          <div class="header__themes">
+
+          <div class="toggler">
             <div class="toggler__mode">Dark mode</div>
-            <svg class="header__icon header__icon_1 header__icon_active">
+            <svg class="toggler__icon toggler__icon_1 toggler__icon_active">
               <use href="../../assets/images/sprite.svg#sun"></use>
             </svg>
-            <input
-              type="checkbox"
-              name="themes-checkbox"
-              id="themes-checkbox"
-              class="header__themes_checkbox"
-            />
-            <label for="themes-checkbox" class="header__themes_label"> </label>
-            <svg class="header__icon header__icon_2">
+            <label class="toggler__label">
+              <input
+                type="checkbox"
+                name=""
+                class="toggler__input"
+              />
+              <div class="toggler__state">
+                <div class="toggler__control"></div>
+              </div>
+            </label>
+            <svg class="toggler__icon toggler__icon_2">
               <use href="../../assets/images/sprite.svg#moon"></use>
             </svg>
           </div>
+
         </nav>
         <h1 class="header__title">Reusable component library</h1>
       </div>

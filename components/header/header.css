@@ -37,7 +37,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 24px;
+    gap: 23px;
     margin-right: 55px;
 }
 
@@ -50,25 +50,6 @@
 
 .header__link_active {
     color: var(--black);
-}
-
-.header__icon {
-    color: var(--grey-3);
-    display: inline-block;
-}
-
-.header__icon_active {
-    color: var(--black);
-}
-
-.header__icon_1 {
-    width: 24px;
-    height: 24px;
-}
-
-.header__icon_2 {
-    width: 20px;
-    height: 20px;
 }
 
 @media (max-width: 768px) {

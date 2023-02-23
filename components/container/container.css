@@ -1,11 +1,7 @@
 .container {
-    max-width: 1150px;
+    max-width: 1110px;
     margin: 0 auto;
-    padding: 0 5px;
-}
-
-.container_header {
-    padding-left: 15px;
+    padding: 0;
 }
 
 @media (max-width: 1180px) {

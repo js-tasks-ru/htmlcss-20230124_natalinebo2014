@@ -1,63 +1,98 @@
-.header__themes {
-    width: 127px;
-    position: relative;
-    margin-right: 15px;
+.toggler {
+    width: 124px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .toggler__mode {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-family: Inter;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 400;
     color: var(--grey-4);
     display: none;
 }
 
-.header__themes_checkbox {
-    display: none;
+.toggler__label {
+  display: inline-flex;
+  position: relative;
 }
 
-.header__themes_label {
-    width: 52px;
-    height: 28px;
-    display: inline-block;
-    border-radius: 16px;
-    background: var(--white);
-    border: 1px solid var(--grey-3);
-    margin: 0 11px;
-    position: relative;
-    cursor: pointer;
+.toggler__input {
+  position: absolute;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
 }
 
-.header__themes_label::after {
-    content: "";
+.toggler__state {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggler__control {
+  width: 52px;
+  height: 28px;
+  background: #FFFFFF;
+  border: 1px solid var(--grey-2);
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggler__control::before {
+    content: '';
     width: 24px;
     height: 24px;
-    background: var(--grey-3);
     border-radius: 50%;
+    background-color: var(--grey-2);
     position: absolute;
     top: 1px;
     left: 1px;
-    transition: transform 0.2s ease-in;
+    transition: all 0.3s;
 }
 
-.header__themes_checkbox:checked + .header__themes_label {
-    background-color: var(--grey-3);
+.toggler__input:disabled + .toggler__state .toggler__control::after {
+  content: "Disabled";
+  right: -80px;
 }
 
-.header__themes_checkbox:checked + .header__themes_label::after {
-    background-color: var(--white);
+.toggler__input:checked + .toggler__state .toggler__control {
+  background-color: var(--blue-light);
+  border-color: var(--blue-light)
 }
 
-.header__themes_checkbox:checked + .header__themes_label::after {
-    transform: translateX(24px);
+.toggler__input:checked + .toggler__state .toggler__control::before {
+  background-color: var(--white);
+  transform: translateX(24px);
+}
+
+.toggler__input:focus + .toggler__state .toggler__title {
+  text-decoration: underline;
+}
+
+.toggler__icon {
+    color: var(--grey-3);
+    display: inline-block;
+}
+
+.toggler__icon_active {
+    color: var(--black);
+}
+
+.toggler__icon_1 {
+    width: 24px;
+    height: 24px;
+}
+
+.toggler__icon_2 {
+    width: 20px;
+    height: 20px;
 }
 
 @media (max-width: 768px) {
-    .header__themes {
+    .toggler {
         width: 100%;
         padding: 24px 0;
         margin-right: 0;
@@ -65,7 +100,7 @@
         border-bottom: 1px solid var(--grey-2);
     }
 
-    .header__themes_label {
+    .toggler__label {
         margin-right: 0;
         margin-left: auto;
     }
