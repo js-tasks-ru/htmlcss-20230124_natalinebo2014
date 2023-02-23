@@ -1,9 +1,9 @@
-/* .burger {
+.burger {
     position: absolute;
     top: 16px;
     left: 12px;
     display: none;
-} */
+}
 
 .burger__checkbox {
   position: absolute;
@@ -20,10 +20,9 @@
   border-radius: 50%;
   background-color: var(--grey-2);
   position: absolute;
-    top: 16px;
-    left: 12px;
-    z-index: 20;
-    display: none;
+  top: 16px;
+  left: 12px;
+  z-index: 20;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -83,20 +82,9 @@
 .burger__checkbox:checked + .burger__button::before {
   transform: rotate(45deg) scale(1);
 }
+
 .burger__checkbox:checked + .burger__button::after {
   transform: rotate(-45deg) scale(1);
-}
-
-/* .burger__checkbox:checked  ~ .header__nav {
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-} */
-
-.header__nav[data-open] {
-    left: 0;
-    width: 100vw;
-    height: 100vh;
 }
 
 .burger__checkbox:checked  ~ .header__nav .toggler .toggler__icon {
@@ -104,7 +92,7 @@
 }
 
 @media (max-width: 768px) {
-  .burger__button {
+  .burger {
     display: block;
   }
 }

@@ -1,4 +1,4 @@
-const menu = document.getElementById('burger-menu');
+const menu = document.getElementById('header-nav');
 const menuOpen = document.getElementById('burger-menu-open');
 const headerLinks = document.querySelectorAll('.header__link');
 const burgerCheckbox = document.getElementById('burger-checkbox');

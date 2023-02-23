@@ -21,6 +21,12 @@
     transition: all 0.6s linear;
 }
 
+.header__nav[data-open] {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 .header__logo {
     display: block;
     position: absolute;

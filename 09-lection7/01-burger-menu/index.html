@@ -9,20 +9,22 @@
       <title>Burger menu</title>
     </head>
     <body>
-         <header class="header">
-      <div class="container container_header">
+      <header class="header">
+      <div class="container">
         <a href="#" class="header__logo">
           <svg class="header__logo_svg">
             <use href="../../assets/images/sprite.svg#logo"></use>
           </svg>
         </a>
-        <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
-        <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
+        <div class="burger">
+          <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
+          <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
             <span class="burger__line"></span>
             <span class="burger__line"></span>
             <span class="burger__line"></span>
-        </label>
-        <nav class="header__nav" id="burger-menu">
+          </label>
+        </div>
+        <nav class="header__nav" id="header-nav">
           <ul class="header__menu">
             <li class="header__menu-item">
               <a href="#" class="header__link header__link_active">Components</a>

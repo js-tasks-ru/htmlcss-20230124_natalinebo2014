@@ -108,4 +108,8 @@
     .toggler__mode {
         display: block;
     }
+
+    .toggler__icon {
+      display: none;
+    }
 }
