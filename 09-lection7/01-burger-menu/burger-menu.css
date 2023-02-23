@@ -87,7 +87,13 @@
   transform: rotate(-45deg) scale(1);
 }
 
-.burger__checkbox:checked  ~ .header__nav {
+/* .burger__checkbox:checked  ~ .header__nav {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.header__nav[data-open] {
     left: 0;
     width: 100vw;
     height: 100vh;
