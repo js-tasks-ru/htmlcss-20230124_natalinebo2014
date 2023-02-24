@@ -1,6 +1,5 @@
 .input {
     width: fit-content;
-    position: relative;
 }
 
 .input__label {
@@ -14,6 +13,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
+}
+
+.input__wrapper {
+    position:relative
 }
 
 .input__element {
