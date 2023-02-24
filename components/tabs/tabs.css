@@ -1,0 +1,21 @@
+.column__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.cards__item_form {
+    display: flex;justify-content: space-between;
+    padding: 49px 26px 0;
+}
+
+.tabs__label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+}
+
+.tabs__input:checked .tabs__label {
+    color: var(--black);
+}
