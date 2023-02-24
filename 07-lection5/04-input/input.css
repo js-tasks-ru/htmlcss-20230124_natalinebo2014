@@ -37,22 +37,13 @@
     border-color: var(--blue-light);
 }
 
-.input__state {
+.input__icon {
     display: inline-block;
     width: 24px;
     height: 24px;
-    position: relative;
-    bottom: -2px;
-    margin-left: -38px;
-}
-
-.input__icon {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 16px;
+    right: 16px;
     opacity: 0;
     transition: all .4s;
 }
@@ -65,11 +56,11 @@
     color: var(--red);
 }
 
-.input__success .input__state .input__icon_success {
+.input_success .input__icon_success {
     opacity: 1;
 }
 
-.input__error .input__element {
+.input_error .input__element {
     border-color: var(--red);
 }
 
@@ -77,6 +68,6 @@
     border-color: var(--red);
 }
 
-.input__error .input__state .input__icon_error {
+.input_error .input__icon_error {
     opacity: 1;
 }
