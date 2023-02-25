@@ -8,6 +8,12 @@
     cursor: pointer;
 }
 
+.tooltip__icon_svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
 .tooltip__details {
     display: none;
     font-family: 'Inter';
@@ -40,3 +46,4 @@
 .tooltip__icon:hover + .tooltip__details {
     display: inline-block;
 }
+
