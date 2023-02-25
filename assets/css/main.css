@@ -1,13 +1,22 @@
 @import '../fonts/fonts.css';
+@import '../../components/accordion/accordion.css';
+@import '../../components/avatar/avatar.css';
+@import '../../components/burger-menu/burger-menu.css';
 @import '../../components/button/button.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/cards/cards.css';
+@import '../../components/checkbox/checkbox.css';
+@import '../../components/container/container.css';
+@import '../../components/footer/footer.css';
 @import '../../components/header/header.css';
+@import '../../components/histogram/histogram.css';
 @import '../../components/page/page.css';
 @import '../../components/preview/preview.css';
-@import '../../components/footer/footer.css';
-@import '../../components/container/container.css';
-@import '../../components/cards/cards.css';
+@import '../../components/radio/radio.css';
+@import '../../components/tabs/tabs.css';
+@import '../../components/toggler/toggler.css';
+@import '../../components/tooltip/tooltip.css';
 
-@import '../../03-lection1/02-accordion/accordion.css';
 
 :root {
     --white: #ffffff;
@@ -39,6 +48,8 @@
     box-sizing: border-box;
     color: inherit;
     border: none;
+    text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -50,6 +61,10 @@ html {
 
 body {
     min-height: 100vh;
+}
+
+.hidden {
+    overflow-y: hidden;
 }
 
 
