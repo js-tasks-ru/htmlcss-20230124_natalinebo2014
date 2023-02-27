@@ -10,6 +10,10 @@
 
 .modal_small {
     display: block;
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
 }
 
 .modal__window {
@@ -21,6 +25,13 @@
     padding: 30px 40px 33px;
     background: var(--white);
     border-radius: 8px;
+}
+
+.modal__window_small {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    transform: none;
 }
 
 .modal__title {
@@ -47,4 +58,12 @@
     background-image: url("../../assets/images/modal-close.svg");
     background-size: contain;
     cursor: pointer;
+}
+
+.modal__window_small .button {
+    font-size: 10px;
+    padding: 5px 35px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
 }

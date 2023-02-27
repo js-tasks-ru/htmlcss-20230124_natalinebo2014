@@ -51,7 +51,33 @@
     display: inline-block;
     font-family: 'Inter';
     line-height: 24px;
+    padding: 8px 0;
     color: var(--grey-3);
+    position: relative;
+}
+
+.header__link::before,
+.header__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--grey-3);
+    transition: width .3s;
+}
+
+.header__link::before {
+    bottom: 7px;
+}
+
+.header__link::after {
+    bottom: 0;
+}
+
+.header__link:hover::before,
+.header__link:hover::after {
+    width: 100%;
 }
 
 .header__link_active {
