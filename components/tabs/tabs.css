@@ -61,6 +61,11 @@
     width: 100%;
 }
 
+#all-tab:checked ~ .cards .cards__item_simple,
+#all-tab:checked ~ .cards .cards__item_complex {
+    display: flex;
+}
+
 #complex-tab:checked ~ .cards .cards__item_simple {
     display: none;
 }
