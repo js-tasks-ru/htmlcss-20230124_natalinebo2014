@@ -3,6 +3,14 @@
     margin: 0 auto;
 }
 
+.container__component_header {
+    position: relative;
+}
+
+.container__component_main {
+    padding-left: 165px;
+}
+
 @media (max-width: 1180px) {
     .container {
         padding: 0 16px;

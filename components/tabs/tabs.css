@@ -33,10 +33,6 @@
     color: var(--black);
 }
 
-.tabs__input:checked .tabs__label {
-    color: var(--black);
-}
-
 .tabs__label::before,
 .tabs__label::after {
     content: "";
@@ -80,4 +76,20 @@
 
 #simplw-tab:checked ~ .cards .cards__item_simple {
     display: flex;
+}
+
+#html-tab:checked ~ .component__html {
+    display: block;
+}
+
+#html-tab:checked ~ .component__css {
+    display: none;
+}
+
+#css-tab:checked ~ .component__html {
+    display: none;
+}
+
+#css-tab:checked ~ .component__css {
+    display: block;
 }

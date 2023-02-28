@@ -2,6 +2,10 @@
     display: none;
 }
 
+.burger_component {
+  display: block;
+}
+
 .burger__checkbox {
   position: absolute;
   top: 20px;

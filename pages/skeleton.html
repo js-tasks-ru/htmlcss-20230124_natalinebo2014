@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <title>Tabs</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="header__logo">
+                  <svg class="header__logo_svg">
+                    <use href="../../assets/images/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+                <div class="burger">
+                  <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
+                  <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                  </label>
+                </div>
+                <nav class="header__nav" id="header-nav">
+                  <ul class="header__menu">
+                    <li class="header__menu-item">
+                      <a href="#" class="header__link header__link_active">Components</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="#about" class="header__link">About</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="#" class="header__link">Contact</a>
+                    </li>
+                  </ul>
+
+                   <div class="toggler">
+                    <div class="toggler__mode">Dark mode</div>
+                    <svg class="toggler__icon toggler__icon_1 toggler__icon_active">
+                      <use href="../../assets/images/sprite.svg#sun"></use>
+                    </svg>
+                    <label class="toggler__label">
+                      <input
+                        type="checkbox"
+                        name=""
+                        class="toggler__input"
+                      />
+                      <div class="toggler__state">
+                        <div class="toggler__control"></div>
+                      </div>
+                    </label>
+                    <svg class="toggler__icon toggler__icon_2">
+                      <use href="../../assets/images/sprite.svg#moon"></use>
+                    </svg>
+                  </div>
+                </nav>
+
+                <h1 class="header__title">Reusable component library</h1>
+            </div>
+        </header>
+        <main class="preview">
+            <div class="container">
+            </div>
+        </main>
+    </body>
+</html>

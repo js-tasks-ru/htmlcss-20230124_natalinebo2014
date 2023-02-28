@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.toggler_component {
+  position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
 .toggler__mode {
     font-family: Inter;
     font-size: 16px;
