@@ -9,4 +9,5 @@
 .preview_component {
     min-height: 520px;
     border: none;
+    text-align: left;
 }

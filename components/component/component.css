@@ -32,6 +32,7 @@
 
 .component__html,
 .component__css {
+    max-height: 50vw;
     text-align: left;
     overflow: auto;
 }

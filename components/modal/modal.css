@@ -9,11 +9,15 @@
 }
 
 .modal_small {
-    display: block;
-    position: static;
+    position: relative;
     width: 100%;
     height: auto;
     padding: 20px;
+    border-radius: 10px;
+}
+
+.modal_open {
+    display: block;
 }
 
 .modal__window {
@@ -28,7 +32,9 @@
 }
 
 .modal__window_small {
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 20px;
     transform: none;
@@ -55,9 +61,12 @@
     right: 12px;
     width: 16px;
     height: 16px;
-    background-image: url("../../assets/images/modal-close.svg");
-    background-size: contain;
     cursor: pointer;
+}
+
+.modal__icon_svg {
+    width: 16px;
+    height: 16px;
 }
 
 .modal__window_small .button {
@@ -67,3 +76,10 @@
     margin-top: 10px;
     margin-left: 10px;
 }
+
+#modal-open {
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<!-- Главная страница -->
-<html lang="ru">
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <title>Tabs</title>
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <title>Modal</title>
     </head>
     <body>
-        <header class="header">
-            <div class="container">
-                <a href="#" class="header__logo">
+        <header class="header header_component">
+            <div class="container container__component_header">
+                <a href="../index.html" class="header__logo header__logo_component">
                   <svg class="header__logo_svg">
-                    <use href="../../assets/images/sprite.svg#logo"></use>
+                    <use href="../assets/images/sprite.svg#logo"></use>
                   </svg>
                 </a>
                 <div class="burger">
@@ -23,23 +22,48 @@
                     <span class="burger__line"></span>
                   </label>
                 </div>
-                <nav class="header__nav" id="header-nav">
-                  <ul class="header__menu">
+                <nav class="header__nav header__nav_component" id="header-nav">
+                  <h2 class="header__title_component">Components</h2>
+                  <ul class="header__menu header__menu_component">
                     <li class="header__menu-item">
-                      <a href="#" class="header__link header__link_active">Components</a>
+                      <a href="accordion.html" class="header__link">Accordion</a>
                     </li>
                     <li class="header__menu-item">
-                      <a href="#about" class="header__link">About</a>
+                      <a href="avatar.html" class="header__link">Avatar</a>
                     </li>
                     <li class="header__menu-item">
-                      <a href="#" class="header__link">Contact</a>
+                      <a href="burger-menu.html" class="header__link">Burger menu</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="button.html" class="header__link">Button</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="calendar.html" class="header__link">Calendar</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="form-elements.html" class="header__link">Form elements</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="histogram.html" class="header__link">Histogram</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="modal.html" class="header__link header__link_active">Modal</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="skeleton.html" class="header__link">Skeleton</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="tooltip.html" class="header__link">Tooltip</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="#" class="header__link"></a>
                     </li>
                   </ul>
 
-                   <div class="toggler">
+                   <div class="toggler toggler_component">
                     <div class="toggler__mode">Dark mode</div>
                     <svg class="toggler__icon toggler__icon_1 toggler__icon_active">
-                      <use href="../../assets/images/sprite.svg#sun"></use>
+                      <use href="../assets/images/sprite.svg#sun"></use>
                     </svg>
                     <label class="toggler__label">
                       <input
@@ -52,17 +76,200 @@
                       </div>
                     </label>
                     <svg class="toggler__icon toggler__icon_2">
-                      <use href="../../assets/images/sprite.svg#moon"></use>
+                      <use href="../assets/images/sprite.svg#moon"></use>
                     </svg>
                   </div>
                 </nav>
 
-                <h1 class="header__title">Reusable component library</h1>
             </div>
         </header>
-        <main class="preview">
-            <div class="container">
+        <main class="preview preview_component">
+            <div class="container container__component_main">
+                <div class="component">
+                    <h1 class="component__title">Modal</h1>
+                    <div class="component__body" style="height: 220px;">
+                      <button class="button button_primary" id="modal-open">Open modal</button>
+                      <div id="modal" class="modal modal_small modal_open">
+                                <div class="modal__window modal__window_small">
+                                    <div id="modal-close" class="modal__close">
+                                      <svg class="modal__icon_svg">
+                                        <use href="../assets/images/sprite.svg#close"></use>
+                                      </svg>
+                                    </div>
+                                    <form action="">
+                                        <div class="input input_small">
+                                            <label class="input__label">
+                                                Name
+                                            </label>
+                                            <div class="input__wrapper">
+                                                <input type="text" class="input__element" name="input-text" placeholder="Placeholder" >
+                                                <svg class="input__icon input__icon_success">
+                                                    <use href="../../assets/images/sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="input__icon input__icon_error">
+                                                    <use href="../../assets/images/sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                          <div class="input input_small">
+                                            <label class="input__label">
+                                                Email
+                                            </label>
+                                            <div class="input__wrapper">
+                                                <input type="email" class="input__element" name="input-text" placeholder="Placeholder" >
+                                                <svg class="input__icon input__icon_success">
+                                                    <use href="../../assets/images/sprite.svg#success"></use>
+                                                </svg>
+                                                <svg class="input__icon input__icon_error">
+                                                    <use href="../../assets/images/sprite.svg#error"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: left;">
+                                          <input type="submit" class="button button_primary" value="Submit">
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                    </div>
+                    <div class="component__code">
+                        <div class="tabs">
+                            <input type="radio" name="tabs-input" id="html-tab" class="tabs__input tabs__input_component" checked>
+                            <input type="radio" name="tabs-input" id="css-tab" class="tabs__input tabs__input_component">
+
+                            <div class="tabs__scroller">
+                                <label for="html-tab" class="tabs__label tabs__label_active">HTML </label>
+                                <label for="css-tab" class="tabs__label">CSS</label>
+                            </div>
+
+                            <div class="component__html">
+                            <pre><code>
+&lt;div id=&quot;modal&quot; class=&quot;modal modal_small&quot;&gt;
+  &lt;div class=&quot;modal__window modal__window_small&quot;&gt;
+      &lt;form action=&quot;&quot;&gt;
+          &lt;div class=&quot;input input_small&quot;&gt;
+              &lt;label class=&quot;input__label&quot;&gt;
+                  Name
+              &lt;/label&gt;
+              &lt;div class=&quot;input__wrapper&quot;&gt;
+                  &lt;input type=&quot;text&quot; class=&quot;input__element&quot; name=&quot;input-text&quot; placeholder=&quot;Placeholder&quot; &gt;
+                  &lt;svg class=&quot;input__icon input__icon_success&quot;&gt;
+                      &lt;use href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;
+                  &lt;svg class=&quot;input__icon input__icon_error&quot;&gt;
+                      &lt;use href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+
+            &lt;div class=&quot;input input_small&quot;&gt;
+              &lt;label class=&quot;input__label&quot;&gt;
+                  Email
+              &lt;/label&gt;
+              &lt;div class=&quot;input__wrapper&quot;&gt;
+                  &lt;input type=&quot;text&quot; class=&quot;input__element&quot; name=&quot;input-text&quot; placeholder=&quot;Placeholder&quot; &gt;
+                  &lt;svg class=&quot;input__icon input__icon_success&quot;&gt;
+                      &lt;use href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;
+                  &lt;svg class=&quot;input__icon input__icon_error&quot;&gt;
+                      &lt;use href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div style=&quot;text-align: left;&quot;&gt;
+            &lt;input type=&quot;submit&quot; class=&quot;button button_primary&quot; value=&quot;Submit&quot;&gt;
+          &lt;/div&gt;
+      &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+</div>
+
+  <div class="component__css">
+    <pre><code>
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.modal_small {
+    display: block;
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.modal__window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 428px;
+    padding: 30px 40px 33px;
+    background: var(--white);
+    border-radius: 8px;
+}
+
+.modal__window_small {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    transform: none;
+}
+
+.modal__title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--blue-text);
+}
+
+.modal__content {
+    font-family: 'Inter';
+    line-height: 24px;
+    color: var(--grey-4);
+    margin-top: 14px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../assets/images/modal-close.svg");
+    background-size: contain;
+    cursor: pointer;
+}
+
+.modal__window_small .button {
+    font-size: 10px;
+    padding: 5px 35px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
+        <footer class="footer footer_component">
+            <a href="../index.html" class="footer__link_component">Reusable component library</a>
+        </footer>
+
+      <script src="../components/tabs/tabs.js"></script>
+      <script src="../components/modal/modal.js"></script>
     </body>
 </html>

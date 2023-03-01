@@ -9,7 +9,7 @@
     <body>
         <header class="header header_component">
             <div class="container container__component_header">
-                <a href="#" class="header__logo header__logo_component">
+                <a href="../index.html" class="header__logo header__logo_component">
                   <svg class="header__logo_svg">
                     <use href="../assets/images/sprite.svg#logo"></use>
                   </svg>
@@ -47,13 +47,10 @@
                       <a href="histogram.html" class="header__link">Histogram</a>
                     </li>
                     <li class="header__menu-item">
-                      <a href="modal" class="header__link">Modal</a>
+                      <a href="modal.html" class="header__link">Modal</a>
                     </li>
                     <li class="header__menu-item">
                       <a href="skeleton.html" class="header__link">Skeleton</a>
-                    </li>
-                    <li class="header__menu-item">
-                      <a href="toggler.html" class="header__link">Toggler</a>
                     </li>
                     <li class="header__menu-item">
                       <a href="tooltip.html" class="header__link">Tooltip</a>
@@ -90,10 +87,10 @@
             <div class="container container__component_main">
                 <div class="component">
                     <h1 class="component__title">Burger menu</h1>
-                    <div class="component__body">
-                      <div class="burger">
-                        <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
-                        <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
+                    <div class="component__body" style="position: relative; height: 100px;">
+                      <div class="burger_small">
+                        <input type="checkbox" class="burger__checkbox_small" name="burger-checkbox-small" id="burger-checkbox-small">
+                        <label for="burger-checkbox-small" class="burger__button_small" id="burger-menu-open" style="top: 10px; left: 50px;">
                           <span class="burger__line"></span>
                           <span class="burger__line"></span>
                           <span class="burger__line"></span>

@@ -1,7 +1,7 @@
 .tabs__scroller {
     display: flex;
     gap: 40px;
-    position: absolute;
+    position: relative;
     top: -42px;
 }
 
@@ -57,24 +57,24 @@
     width: 100%;
 }
 
-#all-tab:checked ~ .cards .cards__item_simple,
-#all-tab:checked ~ .cards .cards__item_complex {
+#all-tab:checked ~ .tabs .tabs__item_simple.tabs__item_open,
+#all-tab:checked ~ .tabs .tabs__item_complex.tabs__item_open {
     display: flex;
 }
 
-#complex-tab:checked ~ .cards .cards__item_simple {
+#complex-tab:checked ~ .tabs .tabs__item_simple.tabs__item_open {
     display: none;
 }
 
-#complex-tab:checked ~ .cards .cards__item_complex {
+#complex-tab:checked ~ .tabs .tabs__item_complex.tabs__item_open {
     display: flex;
 }
 
-#simple-tab:checked ~ .cards .cards__item_complex {
+#simple-tab:checked ~ .tabs .tabs__item_complex.tabs__item_open {
     display: none;
 }
 
-#simplw-tab:checked ~ .cards .cards__item_simple {
+#simplw-tab:checked ~ .tabs .tabs__item_simple.tabs__item_open {
     display: flex;
 }
 

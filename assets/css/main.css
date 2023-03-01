@@ -16,6 +16,7 @@
 @import '../../components/page/page.css';
 @import '../../components/preview/preview.css';
 @import '../../components/radio/radio.css';
+@import '../../components/skeleton/skeleton.css';
 @import '../../components/tabs/tabs.css';
 @import '../../components/toggler/toggler.css';
 @import '../../components/tooltip/tooltip.css';

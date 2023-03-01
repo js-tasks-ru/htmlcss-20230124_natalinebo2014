@@ -24,3 +24,10 @@ if (menuOpen) {
         });
     });
 }
+
+
+const burgerSmallCheckbox = document.getElementById('burger-small-checkbox');
+
+burgerSmallCheckbox.addEventListener('click', function() {
+    
+});

@@ -59,7 +59,23 @@
     transition: all 0.3s;
 }
 
-.toggler__input:disabled + .toggler__state .toggler__control::after {
+.toggler__control_component::after {
+  content: "Off";
+  position: absolute;
+  top: 0;
+  right: -35px;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--grey-4);
+}
+
+.toggler__input:checked + .toggler__state .toggler__control_component::after {
+  content: "On";
+}
+
+.toggler__input:disabled + .toggler__state .toggler__control_component::after {
   content: "Disabled";
   right: -80px;
 }

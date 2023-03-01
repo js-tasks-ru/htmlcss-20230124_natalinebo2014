@@ -73,14 +73,14 @@
                     <label for="simple-tab" class="tabs__label">Simple</label>
                 </div>
 
-                <ul class="cards">
-                        <li class="cards__item cards__item_simple">
+                <div class="cards tabs__content">
+                        <section class="cards__item tabs__item_simple cards_open">
                           <a href="pages/tooltip.html" class="cards__link" target="_blank"></a>
-                            <div class="cards__item_header">
-                              <h3 class="cards__item_title">Tooltip</h3>
-                              <p class="cards__item_subtitle">Container</p>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Tooltip</h3>
+                              <p class="cards__subtitle">Container</p>
                             </div>
-                            <div class="cards__item_body">
+                            <div class="cards__body">
                                 <div class="tooltip tooltip_small">
                                     <div class="tooltip__icon">
                                         <svg class="tooltip__icon_svg">
@@ -90,22 +90,22 @@
                                     <div class="tooltip__details" style="display: block;">Helper text</div>
                                 </div>
                               </div>
-                        </li>
-                        <li class="cards__item cards__item_complex">
+                        </section>
+                        <section class="cards__item tabs__item_complex cards_open">
                           <a href="pages/form-elements.html" class="cards__link" target="_blank"></a>
-                            <div class="cards__item_header">
-                              <h3 class="cards__item_title">Custom form elements</h3>
-                              <p class="cards__item_subtitle">Element</p>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Custom form elements</h3>
+                              <p class="cards__subtitle">Element</p>
                             </div>
-                            <div class="cards__item_body cards__item_form">
-                              <div class="column">
+                            <div class="cards__body cards__body_form">
+                              <div class="cards__column">
                                 <div  class="column__item">
                                 <label class="checkbox">
                                     <input type="checkbox" name="checkbox" class="checkbox__input" value="1">
                                     <div class="checkbox__state">
                                         <span class="checkbox__control">
-                                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <svg class="checkbox__icon">
+                                              <use href="./assets/images/sprite.svg#check"></use>
                                             </svg>
                                         </span>
                                         <h5 class="checkbox__title">Default</h5>
@@ -117,9 +117,9 @@
                                         <input type="checkbox" name="checkbox" class="checkbox__input" checked value="2">
                                         <div class="checkbox__state">
                                             <span class="checkbox__control">
-                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
+                                              <svg class="checkbox__icon">
+                                                <use href="./assets/images/sprite.svg#check"></use>
+                                              </svg>
                                             </span>
                                             <h5 class="checkbox__title">Checked</h5>
                                         </div>
@@ -130,9 +130,9 @@
                                         <input type="checkbox" name="checkbox" class="checkbox__input" value="3" disabled>
                                         <div class="checkbox__state">
                                             <span class="checkbox__control">
-                                                <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
+                                              <svg class="checkbox__icon">
+                                                <use href="./assets/images/sprite.svg#check"></use>
+                                              </svg>
                                             </span>
                                             <h5 class="checkbox__title checkbox__title_disabled">Disabled</h5>
                                         </div>
@@ -172,14 +172,14 @@
                                 </div>
                               </div>
                             </div>
-                        </li>
-                        <li class="cards__item cards__item_complex">
+                        </section>
+                        <section class="cards__item tabs__item_complex cards_open">
                           <a href="pages/calendar.html" class="cards__link" target="_blank"></a>
-                            <div class="cards__item_header">
-                              <h3 class="cards__item_title">Calendar</h3>
-                              <p class="cards__item_subtitle">Container</p>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Calendar</h3>
+                              <p class="cards__subtitle">Container</p>
                             </div>
-                            <div class="cards__item_body">
+                            <div class="cards__body">
                                 <div class="calendar calendar_small">
                                     <div class="calendar__title calendar__title_small">Febbruary 2023</div>
                                     <div class="calendar__header calendar__header_small">
@@ -230,15 +230,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="cards__item cards__item_complex">
+                        </section>
+                        <section class="cards__item tabs__item_complex cards_open">
                           <a href="pages/modal.html" class="cards__link" target="_blank"></a>
-                            <div class="cards__item_header">
-                              <h3 class="cards__item_title">Modal dialog</h3>
-                              <p class="cards__item_subtitle">Container</p>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Modal dialog</h3>
+                              <p class="cards__subtitle">Container</p>
                             </div>
-                            <div class="cards__item_body">
-                              <div id="modal" class="modal modal_small">
+                            <div class="cards__body">
+                              <div id="modal" class="modal modal_small modal_open">
                                 <div class="modal__window modal__window_small">
                                     <form action="">
                                         <div class="input input_small">
@@ -248,10 +248,10 @@
                                             <div class="input__wrapper">
                                                 <input type="text" class="input__element" name="input-text" placeholder="Placeholder" >
                                                 <svg class="input__icon input__icon_success">
-                                                    <use href="../../assets/images/sprite.svg#success"></use>
+                                                    <use href="./assets/images/sprite.svg#success"></use>
                                                 </svg>
                                                 <svg class="input__icon input__icon_error">
-                                                    <use href="../../assets/images/sprite.svg#error"></use>
+                                                    <use href="./assets/images/sprite.svg#error"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -263,10 +263,10 @@
                                             <div class="input__wrapper">
                                                 <input type="text" class="input__element" name="input-text" placeholder="Placeholder" >
                                                 <svg class="input__icon input__icon_success">
-                                                    <use href="../../assets/images/sprite.svg#success"></use>
+                                                    <use href="./assets/images/sprite.svg#success"></use>
                                                 </svg>
                                                 <svg class="input__icon input__icon_error">
-                                                    <use href="../../assets/images/sprite.svg#error"></use>
+                                                    <use href="./assets/images/sprite.svg#error"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -277,14 +277,14 @@
                                 </div>
                               </div>
                             </div>
-                        </li>
-                        <li class="cards__item cards__item_complex">
+                        </section>
+                        <section class="cards__item tabs__item_complex cards_open">
                           <a href="pages/histogram.html" class="cards__link" target="_blank"></a>
-                            <div class="cards__item_header">
-                              <h3 class="cards__item_title">Histogram</h3>
-                              <p class="cards__item_subtitle">Element</p>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Histogram</h3>
+                              <p class="cards__subtitle">Element</p>
                             </div>
-                            <div class="cards__item_body">
+                            <div class="cards__body">
                               <div class="histogram histogram_small">
                                 <div class="histogram__info">
                                   <div class="histogram__total">
@@ -331,15 +331,15 @@
                                 </div>
                               </div>
                             </div>
-                        </li>
-                        <li class="cards__item cards__item_simple">
+                        </section>
+                        <section class="cards__item tabs__item_simple cards_open">
                           <a href="pages/avatar.html" class="cards__link" target="_blank"></a>
-                            <div class="cards__item_header">
-                              <h3 class="cards__item_title">Avatar</h3>
-                              <p class="cards__item_subtitle">Container</p>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Avatar</h3>
+                              <p class="cards__subtitle">Container</p>
                             </div>
-                            <div class="cards__item_body">
-                              <div class="avatar avatar_small">
+                            <div class="cards__body">
+                              <div class="avatar avatar_small" style="margin: 25px auto 0;">
                                 <img
                                   src="assets/images/avatar.jpg"
                                   sizes="102px"
@@ -353,10 +353,89 @@
                                 />
                               </div>
                             </div>
-                        </li>
-                </ul>
+                        </section>
+                        <section class="cards__item tabs__item_complex cards__item_hidden cards_hidden">
+                          <a href="pages/tooltip.html" class="cards__link" target="_blank"></a>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Skeleton</h3>
+                              <p class="cards__subtitle">Container</p>
+                            </div>
+                            <div class="cards__body">
+                                <div class="skeleton skeleton_small">
+                                  <div class="skeleton__header">
+                                    <div class="skeleton__item_circle skeleton__item"></div>
+                                    <div class="skeleton__info skeleton__info_header">
+                                      <div class="skeleton__item skeleton__item_short"></div>
+                                      <div class="skeleton__item skeleton__item_medium"></div>
+                                    </div>
+                                  </div>
+                                  <div class="skeleton__info skeleton__info_body">
+                                    <div class="skeleton__item"></div>
+                                    <div class="skeleton__item"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="cards__item tabs__item_simple cards__item_hidden cards_hidden">
+                          <a href="pages/tooltip.html" class="cards__link" target="_blank"></a>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Button</h3>
+                              <p class="cards__subtitle">Container</p>
+                            </div>
+                            <div class="cards__body">
+                              <div style="margin-bottom: 20px; display: flex; gap: 20px;">
+                                <button class="button button_primary button_small">Primary</button>
+                                <button class="button button_primary button_small" disabled>Primary</button>
+                              </div>
+                              <div style="margin-bottom: 20px; display: flex; gap: 20px;">
+                                <button class="button button_secondary button_small">Secondary</button>
+                                <button class="button button_secondary button_small" disabled>Secondary</button>
+                              </div>
+                              <div style="display: flex; gap: 20px;">
+                                <button class="button button_alternate button_small">Alternate</button>
+                                <button class="button button_alternate button_small" disabled>Alternate</button>
+                              </div>
+                            </div>
+                        </section>
+                        <section class="cards__item tabs__item_simple cards__item_hidden cards_hidden">
+                          <a href="pages/burger-menu.html" class="cards__link" target="_blank"></a>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Burger menu</h3>
+                              <p class="cards__subtitle">Container</p>
+                            </div>
+                            <div class="cards__body">
+                                <div class="burger_small">
+                                  <input type="checkbox" class="burger__checkbox_small" name="burger-checkbox" id="burger-small-checkbox">
+                                  <label for="burger-checkbox" class="burger__button_small" id="burger-menu-small-open" style="top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0;">
+                                    <span class="burger__line"></span>
+                                    <span class="burger__line"></span>
+                                    <span class="burger__line"></span>
+                                  </label>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="cards__item tabs__item_complex cards__item_hidden cards_hidden">
+                          <a href="pages/accordion.html" class="cards__link" target="_blank"></a>
+                            <div class="cards__header">
+                              <h3 class="cards__title">Accordion</h3>
+                              <p class="cards__subtitle">Container</p>
+                            </div>
+                            <div class="cards__body">
+                              <div class="accordion accordion_small">
+                                <details class="accordion__details" open>
+                                    <summary class="accordion__summary">
+                                        Accordion item
+                                    </summary>
+                                    <p class="accordion__content">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </details>
+                              </div>
+                            </div>
+                        </section>
+                </div>
             </div>
-            <button class="button button_alternate">Load more</button>
+            <button class="button button_alternate button_cards" id="button-cards">Load more</button>
           </div>
         </main>
         <footer class="footer" id="about">
@@ -372,6 +451,7 @@
         </footer>
 
     <script src="components/burger-menu/burger-menu.js"></script>
+    <script src="components/button/button.js"></script>
     <script src="components/tabs/tabs.js"></script>
     </body>
 </html>

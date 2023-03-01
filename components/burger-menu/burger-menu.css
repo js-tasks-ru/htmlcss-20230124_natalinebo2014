@@ -2,11 +2,16 @@
     display: none;
 }
 
+.burger_small {
+  display: block;
+}
+
 .burger_component {
   display: block;
 }
 
-.burger__checkbox {
+.burger__checkbox,
+.burger__checkbox_small {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -15,9 +20,18 @@
 }
 
 .burger__button {
-  display: inline-block;
   width: 32px;
   height: 32px;
+}
+
+.burger__button_small {
+  width: 60px;
+  height: 60px;
+}
+
+.burger__button,
+.burger__button_small {
+  display: inline-block;
   border-radius: 50%;
   background-color: var(--grey-2);
   position: absolute;
@@ -30,9 +44,21 @@
 
 .burger__button::before,
 .burger__button::after {
-  content: '';
   width: 24px;
   height: 2px;
+}
+
+.burger__button_small::before,
+.burger__button_small::after {
+  width: 40px;
+  height: 3px;
+}
+
+.burger__button::before,
+.burger__button::after,
+.burger__button_small::before,
+.burger__button_small::after {
+  content: '';
   background-color: var(--black);
   position: absolute;
   top: 15px;
@@ -42,13 +68,20 @@
   transition-delay: 0.3s;
 }
 
-.burger__button::before {
+.burger__button_small::before,
+.burger__button_small::after {
+  top: 48%;
+  transform: scale(0);
+  left: 10px;
+}
+
+/* .burger__button_small::before {
   transform: rotate(45deg) scale(0);
 }
 
-.burger__button::after {
+.burger__button_small::after {
   transform: rotate(-45deg) scale(0);
-}
+} */
 
 .burger__line {
   width: 70%;
@@ -72,11 +105,24 @@
   bottom: 7px;
 }
 
+.burger__button_small .burger__line {
+  height: 3px;
+  left: 9px;
+}
+
+.burger__button_small .burger__line:first-child {
+  top: 14px;
+}
+
+.burger__button_small .burger__line:last-child {
+  bottom: 14px;
+}
+
 .burger__checkbox:checked + .burger__button {
   transform: rotate(-90deg);
 }
 
-.burger__checkbox:checked + .burger__button .burger__line {
+.burger__checkbox:checked + .burger__button > .burger__line {
   transform: translateY(50%) scale(0);
 }
 
@@ -90,6 +136,22 @@
 
 .burger__checkbox:checked  ~ .header__nav .toggler .toggler__icon {
     display: none;
+}
+
+.burger__checkbox_small:checked + .burger__button_small {
+  transform: rotate(-90deg);
+}
+
+.burger__checkbox_small:checked + .burger__button_small > .burger__line {
+  transform: translateY(50%) scale(0);
+}
+
+.burger__checkbox_small:checked + .burger__button_small::before {
+  transform: rotate(45deg) scale(1);
+}
+
+.burger__checkbox_small:checked + .burger__button_small::after {
+  transform: rotate(-45deg) scale(1);
 }
 
 @media (max-width: 768px) {

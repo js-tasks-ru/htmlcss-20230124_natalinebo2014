@@ -28,6 +28,8 @@
 }
 
 .checkbox__icon {
+    width: 16px;
+    color: var(--white);
     opacity: 0;
     transition: opacity .4s;
 }

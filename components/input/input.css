@@ -77,6 +77,10 @@
     color: var(--red);
 }
 
+.input_success .input__element {
+    border-color: var(--blue-light);
+}
+
 .input_success .input__icon_success {
     opacity: 1;
 }
