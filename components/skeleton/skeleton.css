@@ -28,6 +28,20 @@
     #dde2e5 102.52%
   );
   height: 20px;
+  animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .skeleton__item_circle {
