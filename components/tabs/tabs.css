@@ -1,0 +1,104 @@
+.tabs__scroller {
+    position: relative;
+    top: -42px;
+    text-align: left;
+}
+
+.column__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__label {
+    display: inline-block;
+    padding: 8px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.tabs__label:not(:last-child) {
+    margin-right: 40px;
+}
+
+.tabs__label_active {
+    color: var(--black);
+}
+
+.tabs__label::before,
+.tabs__label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--grey-3);
+    transition: width .3s;
+}
+
+.tabs__label::before {
+    bottom: 7px;
+}
+
+.tabs__label::after {
+    bottom: 0;
+}
+
+.tabs__label:hover::before,
+.tabs__label:hover::after {
+    width: 100%;
+}
+
+#all-tab:checked ~ .tabs__content_all {
+    display: block;
+}
+
+#all-tab:checked ~ .tabs__content_complex,
+#all-tab:checked ~ .tabs__content_simple {
+    display: none;
+}
+
+#complex-tab:checked ~ .tabs__content_complex {
+    display: block;
+}
+
+#complex-tab:checked ~ .tabs__content_all,
+#complex-tab:checked ~ .tabs__content_simple {
+    display: none;
+}
+
+#simple-tab:checked ~ .tabs__content_simple {
+    display: block;
+}
+
+#simple-tab:checked ~ .tabs__content_all,
+#simple-tab:checked ~ .tabs__content_complex {
+    display: none;
+}
+
+#html-tab:checked ~ .component__html {
+    display: block;
+}
+
+#html-tab:checked ~ .component__css {
+    display: none;
+}
+
+#css-tab:checked ~ .component__html {
+    display: none;
+}
+
+#css-tab:checked ~ .component__css {
+    display: block;
+}

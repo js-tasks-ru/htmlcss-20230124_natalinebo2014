@@ -9,6 +9,14 @@
 }
 
 .modal_small {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal_open {
     display: block;
 }
 
@@ -21,6 +29,15 @@
     padding: 30px 40px 33px;
     background: var(--white);
     border-radius: 8px;
+}
+
+.modal__window_small {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transform: none;
 }
 
 .modal__title {
@@ -44,7 +61,25 @@
     right: 12px;
     width: 16px;
     height: 16px;
-    background-image: url("../../assets/images/modal-close.svg");
-    background-size: contain;
     cursor: pointer;
 }
+
+.modal__icon_svg {
+    width: 16px;
+    height: 16px;
+}
+
+.modal__window_small .button {
+    font-size: 10px;
+    padding: 5px 35px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#modal-open {
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+

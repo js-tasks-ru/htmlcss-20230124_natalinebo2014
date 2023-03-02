@@ -2,3 +2,17 @@
     max-width: 1110px;
     margin: 0 auto;
 }
+
+.container__component_header {
+    position: relative;
+}
+
+.container__component_main {
+    padding: 0 16px 0 165px
+}
+
+@media (max-width: 1180px) {
+    .container {
+        padding: 0 16px;
+    }
+}

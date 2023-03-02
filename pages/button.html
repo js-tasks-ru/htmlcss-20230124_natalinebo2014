@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <title>Button</title>
+    </head>
+    <body>
+        <header class="header container__component header_component">
+            <div class="container container__component_header">
+                <a href="../index.html" class="header__logo header__logo_component">
+                  <svg class="header__icon">
+                    <use href="../assets/images/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+                <div class="burger">
+                  <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
+                  <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                  </label>
+                </div>
+                <nav class="header__nav header__nav_component" id="header-nav">
+                  <h2 class="header__title header__title_component">Components</h2>
+                  <ul class="header__menu header__menu_component">
+                    <li class="header__menu-item">
+                      <a href="accordion.html" class="header__link">Accordion</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="avatar.html" class="header__link">Avatar</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="button.html" class="header__link header__link_active">Button</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="calendar.html" class="header__link">Calendar</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="form-elements.html" class="header__link">Form elements</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="histogram.html" class="header__link">Histogram</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="modal.html" class="header__link">Modal</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="skeleton.html" class="header__link">Skeleton</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="tooltip.html" class="header__link">Tooltip</a>
+                    </li>
+                    <li class="header__menu-item">
+                      <a href="#" class="header__link"></a>
+                    </li>
+                  </ul>
+
+                   <div class="toggler toggler_component">
+                    <div class="toggler__mode">Dark mode</div>
+                    <svg class="toggler__icon toggler__icon_light toggler__icon_active">
+                      <use href="../assets/images/sprite.svg#sun"></use>
+                    </svg>
+                    <label class="toggler__label">
+                      <input
+                        type="checkbox"
+                        name=""
+                        class="toggler__input"
+                      />
+                      <div class="toggler__state">
+                        <div class="toggler__control"></div>
+                      </div>
+                    </label>
+                    <svg class="toggler__icon toggler__icon_dark">
+                      <use href="../assets/images/sprite.svg#moon"></use>
+                    </svg>
+                  </div>
+                </nav>
+
+            </div>
+        </header>
+        <main class="preview preview_component">
+            <div class="container container__component container__component_main">
+                <div class="component m-l-medium">
+                    <h1 class="component__title">Button</h1>
+                    <div class="component__body" style="max-width: 450px;">
+                      <div style="margin-bottom: 20px; display: flex; gap: 20px;">
+                        <button class="button button_primary">Primary</button>
+                        <button class="button button_primary" disabled>Primary</button>
+                      </div>
+                      <div style="margin-bottom: 20px; display: flex; gap: 20px;">
+                        <button class="button button_secondary">Secondary</button>
+                        <button class="button button_secondary" disabled>Secondary</button>
+                      </div>
+                      <div style="display: flex; gap: 20px;">
+                        <button class="button button_alternate">Alternate</button>
+                        <button class="button button_alternate" disabled>Alternate</button>
+                      </div>
+                    </div>
+                    <div class="component__code">
+                        <div class="tabs">
+                            <input type="radio" name="tabs-input" id="html-tab" class="tabs__input tabs__input_component" checked>
+                            <input type="radio" name="tabs-input" id="css-tab" class="tabs__input tabs__input_component">
+
+                            <div class="tabs__scroller">
+                                <label for="html-tab" class="tabs__label tabs__label_active">HTML </label>
+                                <label for="css-tab" class="tabs__label">CSS</label>
+                            </div>
+
+                            <div class="component__html">
+                            <pre><code>
+  &lt;button class=&quot;button button_primary&quot;&gt;Primary&lt;/button&gt;
+  &lt;button class=&quot;button button_primary&quot; disabled&gt;Primary&lt;/button&gt;
+  &lt;button class=&quot;button button_secondary&quot;&gt;Secondary&lt;/button&gt;
+  &lt;button class=&quot;button button_secondary&quot; disabled&gt;Secondary&lt;/button&gt;
+  &lt;button class=&quot;button button_alternate&quot;&gt;Alternate&lt;/button&gt;
+  &lt;button class=&quot;button button_alternate&quot; disabled&gt;Alternate&lt;/button&gt;
+  </code></pre>
+</div>
+
+  <div class="component__css">
+    <pre><code>
+
+.button {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 15px 57px 14px;
+  border-radius: 8px;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.button:active {
+  transform: translateY(0px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.button_primary {
+  background-color: #4263eb;
+  color: var(--white);
+}
+
+.button_secondary {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.button_alternate {
+  border: 1px solid var(--grey-3);
+  color: var(--grey-4);
+}
+
+.button_primary:hover {
+  background: #2342c0;
+}
+
+.button_secondary:hover {
+  background: #5028c6;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer footer_component">
+            <a href="../index.html" class="footer__link_component">Reusable component library</a>
+        </footer>
+
+      <script src="../components/tabs/tabs.js"></script>
+    </body>
+</html>
