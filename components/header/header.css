@@ -35,7 +35,7 @@
 .header__nav_component {
     display: block;
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 80px;
     z-index: 10;
 }
@@ -56,7 +56,7 @@
     position: relative;
 }
 
-.header__logo_svg {
+.header__icon {
     width: 110px;
     height: 32px;
     display: block;
@@ -158,7 +158,7 @@
         transform: none;
     }
 
-    .header__logo_svg {
+    .header__icon {
         height: 30px;
         width: 104px;
     }

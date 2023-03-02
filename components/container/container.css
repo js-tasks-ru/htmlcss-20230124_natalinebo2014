@@ -8,7 +8,7 @@
 }
 
 .container__component_main {
-    padding-left: 165px;
+    padding: 0 16px 0 165px
 }
 
 @media (max-width: 1180px) {

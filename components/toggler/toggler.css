@@ -103,12 +103,12 @@
     color: var(--black);
 }
 
-.toggler__icon_1 {
+.toggler__icon_light {
     width: 24px;
     height: 24px;
 }
 
-.toggler__icon_2 {
+.toggler__icon_dark {
     width: 20px;
     height: 20px;
 }

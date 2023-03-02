@@ -49,10 +49,6 @@
   flex-grow: 1;
 }
 
-.button_cards {
-  margin-bottom: 92px;
-}
-
 .button_primary:hover {
   background: #2342c0;
 }

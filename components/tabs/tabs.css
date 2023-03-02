@@ -1,8 +1,7 @@
 .tabs__scroller {
-    display: flex;
-    gap: 40px;
     position: relative;
     top: -42px;
+    text-align: left;
 }
 
 .column__item:not(:last-child) {
@@ -27,6 +26,10 @@
     position: relative;
     transition: .3s;
     cursor: pointer;
+}
+
+.tabs__label:not(:last-child) {
+    margin-right: 40px;
 }
 
 .tabs__label_active {
