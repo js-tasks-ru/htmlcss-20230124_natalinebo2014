@@ -5,9 +5,6 @@
   position: absolute;
   top: 16px;
   left: 12px;
-}
-
-.header__button_open {
   display: none;
 }
 
@@ -23,7 +20,8 @@
 }
 
 @media (max-width: 768px) {
-  .header__button_open {
+  .header__button_open,
+  .header__button_close {
     display: block;
   }
 }
