@@ -2,12 +2,6 @@
   transition: all .6s;
 }
 
-.burger[data-open] {
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
 .burger__close {
   width: 32px;
   height: 32px;
@@ -55,10 +49,17 @@
 
 @media (max-width: 768px) {
   .burger {
+    width: 100vw;
+    height: 100vh;
     position: fixed;
-        left: -100%;
-        top: 0;
+    transform: translateX(-100%);
+    top: 0;
+    left: 0;
   }
+
+  .burger[data-open] {
+    transform: translateX(0);
+    }
 
   .burger__close {
     display: block;
