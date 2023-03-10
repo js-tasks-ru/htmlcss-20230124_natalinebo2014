@@ -3,16 +3,18 @@
     margin: 0 auto;
 }
 
-.container__component_header {
+.container__component {
     position: relative;
-}
-
-.container__component_main {
-    padding: 0 16px 0 165px
+    width: 100%;
 }
 
 @media (max-width: 1180px) {
     .container {
         padding: 0 16px;
     }
+
+    .container__component_main {
+        padding: 0;
+    }
+
 }

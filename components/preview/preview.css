@@ -11,3 +11,13 @@
     border: none;
     text-align: left;
 }
+
+.preview__container {
+    padding: 0 16px 0 165px;
+}
+
+@media (max-width: 768px) {
+    .preview__container {
+    padding: 0;
+}
+}

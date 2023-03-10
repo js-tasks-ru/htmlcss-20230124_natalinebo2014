@@ -120,6 +120,7 @@
         margin-right: 0;
         border-top: 1px solid var(--grey-2);
         border-bottom: 1px solid var(--grey-2);
+        display: none;
     }
 
     .toggler__label {

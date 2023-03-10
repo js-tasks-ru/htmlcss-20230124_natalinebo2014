@@ -2,6 +2,9 @@
     padding: 32px 0 64px;
     background-color: var(--white);
     border-radius: 12px;
+}
+
+.component__margin {
     margin-left: 65px;
 }
 
@@ -35,4 +38,24 @@
     max-height: 50vw;
     text-align: left;
     overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .component {
+        border-radius: 0;
+        padding: 32px 16px;
+    }
+
+    .component__margin {
+        margin-left: 0;
+    }
+
+    .component__title {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .component__button {
+        top: 0;
+    }
 }

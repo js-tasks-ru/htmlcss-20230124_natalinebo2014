@@ -8,22 +8,25 @@
     </head>
     <body>
         <header class="headercontainer__component header_component">
-            <div class="container container__component_header">
+            <div class="container container__component">
                 <a href="../index.html" class="header__logo header__logo_component">
                   <svg class="header__icon">
                     <use href="../assets/images/sprite.svg#logo"></use>
                   </svg>
                 </a>
-                <div class="burger">
-                  <input type="checkbox" class="burger__checkbox" name="burger-checkbox" id="burger-checkbox">
-                  <label for="burger-checkbox" class="burger__button" id="burger-menu-open">
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                  </label>
-                </div>
+                <button class="header__button header__button_open" id="menu-open">
+                  <svg class="header__button_svg">
+                    <use href="./assets/images/sprite.svg#burger"></use>
+                  </svg>
+                </button>
+
                 <nav class="header__nav header__nav_component" id="header-nav">
                   <h2 class="header__title header__title_component">Components</h2>
+                  <button class="header__button header__button_close" id="menu-close" >
+                    <svg class="header__button_svg">
+                      <use href="./assets/images/sprite.svg#close"></use>
+                    </svg>
+                  </button>
                   <ul class="header__menu header__menu_component">
                     <li class="header__menu-item">
                       <a href="accordion.html" class="header__link">Accordion</a>
@@ -78,7 +81,8 @@
             </div>
         </header>
         <main class="preview preview_component">
-            <div class="containercontainer__component container__component_main">
+            <div class="containercontainer__component">
+              <div class="preview__container">
                 <div class="component m-l-medium">
                     <h1 class="component__title">Skeleton</h1>
                     <div class="component__body" style="max-width: 500px;">
@@ -183,6 +187,7 @@
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
         </main>
         <footer class="footer footer_component">
