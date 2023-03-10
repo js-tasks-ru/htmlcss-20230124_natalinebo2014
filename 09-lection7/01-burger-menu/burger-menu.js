@@ -1,19 +1,33 @@
-const menu = document.getElementById('burger-menu');
+const burger = document.getElementById('burger');
+const menuOpen = document.getElementById('menu-open-button');
+const burgerList = document.querySelector('.burger__list');
+const burgerLinks = document.querySelectorAll('.burger__link');
 const menuClose = document.getElementById('burger-menu-close');
-const menuOpen = document.getElementById('burger-menu-open');
+//const burgerCheckbox = document.getElementById('burger-checkbox');
+const BODY = document.body;
 
 if (menuOpen) {
     menuOpen.addEventListener('click', function() {
-        if (menu) {
-            menu.setAttribute('data-open', '');
-        }
+      burger.setAttribute('data-open', '');
+      BODY.classList.add('hidden');
     });
-}
+
+    burgerList.addEventListener('click', function(event) {
+      if (event.target.classList.contains('burger__link')) {
+        burger.removeAttribute('data-open');
+        BODY.classList.remove('hidden');
+      }
+    });
+  }
 
 if (menuClose) {
-    menuClose.addEventListener('click', function() {
-        if (menu) {
-            menu.removeAttribute('data-open');
-        }
-    });
+  menuClose.addEventListener('click', function () {
+    burger.removeAttribute('data-open', '');
+    BODY.classList.remove('hidden');
+  });
 }
+
+
+
+
+
