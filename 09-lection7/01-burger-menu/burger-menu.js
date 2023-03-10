@@ -1,28 +1,28 @@
-const menu = document.getElementById('header-nav');
-const menuOpen = document.getElementById('menu-open');
-const headerMenu = document.getElementById('header-menu');
-const headerLinks = document.querySelectorAll('.header__link');
-const menuClose = document.getElementById('menu-close');
+const burger = document.getElementById('burger');
+const menuOpen = document.getElementById('menu-open-button');
+const burgerList = document.querySelector('.burger__list');
+const burgerLinks = document.querySelectorAll('.burger__link');
+const menuClose = document.getElementById('burger-menu-close');
 //const burgerCheckbox = document.getElementById('burger-checkbox');
 const BODY = document.body;
 
 if (menuOpen) {
     menuOpen.addEventListener('click', function() {
-      menu.setAttribute('data-open', '');
+      burger.setAttribute('data-open', '');
       BODY.classList.add('hidden');
     });
 
-    headerMenu.addEventListener('click', function(event) {
-      if (event.target.classList.contains('header__link')) {
-        menu.removeAttribute('data-open');
+    burgerList.addEventListener('click', function(event) {
+      if (event.target.classList.contains('burger__link')) {
+        burger.removeAttribute('data-open');
         BODY.classList.remove('hidden');
       }
     });
-}
+  }
 
 if (menuClose) {
   menuClose.addEventListener('click', function () {
-    menu.removeAttribute('data-open', '');
+    burger.removeAttribute('data-open', '');
     BODY.classList.remove('hidden');
   });
 }
